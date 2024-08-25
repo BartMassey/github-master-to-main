@@ -15,10 +15,18 @@ support.
 
 ## Usage
 
+* You will need to have installed Github's `gh` tool, and
+  place your Github OAuth token in
+  `$HOME/.github-oauthtoken`
+  
+* Highly recommend running `ssh add-key` with appropriate
+  arguments to avoid repeated password typing (assuming your
+  Github auth is being done with `ssh`)
+
 * To find repos with a remote `master` branch: go to the
   root of the tree you want to search and `sh
   git-find-masters.sh` to get a list of affected
-  directories.
+  directories
 
 * To move a repo from `master` to `main` both locally and
   remotely:
